@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ik9-QS-ifS">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="SOe-r1-IAS">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HMx-CC-o31" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tabBarController id="Ik9-QS-ifS" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="opU-VH-ugr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="TQI-ky-mme" kind="relationship" relationship="viewControllers" id="hbG-BI-cyW"/>
+                        <segue destination="yOM-cM-LsL" kind="relationship" relationship="viewControllers" id="zzu-sZ-HN2"/>
+                        <segue destination="Y45-34-nOc" kind="relationship" relationship="viewControllers" id="n28-rd-cWG"/>
+                        <segue destination="JS3-ui-4cl" kind="relationship" relationship="viewControllers" id="eOU-wr-Wce"/>
+                        <segue destination="ard-pN-92d" kind="relationship" relationship="viewControllers" id="kd0-j8-qYO"/>
+                    </connections>
+                </tabBarController>
+            </objects>
+            <point key="canvasLocation" x="-1271" y="-348"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="JbQ-QX-VF9">
+            <objects>
+                <navigationController id="TQI-ky-mme" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" selectedImage="questionmark" catalog="system" id="ifC-jV-e6w"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xWB-5D-wUX">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="zlm-yg-agj" kind="relationship" relationship="rootViewController" id="Xeo-Mh-8M3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pDf-UV-30S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2807" y="343"/>
+        </scene>
+        <!--The Vaccination Mission-->
+        <scene sceneID="Cri-al-WDf">
+            <objects>
+                <viewController id="zlm-yg-agj" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zAb-QC-7d3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="qSV-bH-ruu"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="The Vaccination Mission" id="0E4-Wr-EcD"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eoM-IO-T6X" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2807" y="1035"/>
+        </scene>
+        <!--General Vaccine Information-->
+        <scene sceneID="ulg-tU-xMx">
+            <objects>
+                <viewController id="ek7-eW-5dn" customClass="ViewController" customModule="ADLAppathon" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bSt-2g-Ooh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="1DU-4k-bgx"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="General Vaccine Information" id="agK-lZ-7KU"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x4h-JQ-dvo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2030" y="1035"/>
+        </scene>
+        <!--Vaccination Centers-->
+        <scene sceneID="lQP-sv-dpx">
+            <objects>
+                <viewController id="Mfu-5d-kdr" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gRU-0D-d8X">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="XYJ-78-7Li"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Vaccination Centers" id="5mz-Tw-dwg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y3b-uO-5pE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1271" y="1035"/>
+        </scene>
+        <!--Live Bot Chat-->
+        <scene sceneID="k0a-Po-zZX">
+            <objects>
+                <viewController id="z3W-gr-SrP" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DbA-sV-WTR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="j7C-FC-nik"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Live Bot Chat" id="8lH-HH-6GW"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qgJ-Cb-rwv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-499" y="1035"/>
+        </scene>
+        <!--Vaccine Statistics-->
+        <scene sceneID="4oE-vh-zyT">
+            <objects>
+                <viewController id="1aM-2d-VWz" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="l4L-w1-bFZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="ctV-q5-M4d"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Vaccine Statistics" id="eI8-gZ-yd7"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4th-1Y-jFt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="284" y="1035"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="eX1-D5-PJ9">
+            <objects>
+                <navigationController id="Y45-34-nOc" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" selectedImage="location" catalog="system" id="AF6-Md-6D9"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="eqt-eb-H6J">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Mfu-5d-kdr" kind="relationship" relationship="rootViewController" id="vb0-of-3yX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="boL-l4-Tmb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1271" y="343"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="SLI-5H-BGU">
+            <objects>
+                <navigationController id="JS3-ui-4cl" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" selectedImage="message" catalog="system" id="FcE-jt-wxd"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="SRH-6H-4AJ">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="z3W-gr-SrP" kind="relationship" relationship="rootViewController" id="GgG-gh-nVJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7yQ-kZ-gpz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-500" y="343"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="f2T-ym-Kly">
+            <objects>
+                <navigationController id="ard-pN-92d" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" selectedImage="globe" catalog="system" id="sJy-x9-uIP"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="E8S-eN-jMf">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="1aM-2d-VWz" kind="relationship" relationship="rootViewController" id="pmw-bU-0Lx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Ji-XR-Fe3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="283" y="343"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="hO8-z1-hG4">
+            <objects>
+                <navigationController id="yOM-cM-LsL" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" selectedImage="star" catalog="system" id="237-xh-7UT"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="1vD-e0-dKG">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="ek7-eW-5dn" kind="relationship" relationship="rootViewController" id="6US-Ls-ILb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FVG-pj-soR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2030" y="343"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="globe" catalog="system" width="128" height="121"/>
+        <image name="location" catalog="system" width="128" height="121"/>
+        <image name="message" catalog="system" width="128" height="113"/>
+        <image name="questionmark" catalog="system" width="96" height="128"/>
+        <image name="star" catalog="system" width="128" height="116"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
